@@ -1,0 +1,10 @@
+name: Test
+on: [push]
+jobs:
+  demo:
+    name: Test Job
+    runs-on: ubuntu-latest
+    outputs:
+      baseUrl: ${{ secrets.TEST_URL }}
+    steps:
+      - name: echo "The URL is ${{ secrets.TEST_URL }}"
