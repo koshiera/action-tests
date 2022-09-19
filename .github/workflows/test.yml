@@ -7,4 +7,4 @@ jobs:
     outputs:
       baseUrl: ${{ secrets.TEST_URL }}
     steps:
-      - name: echo "The URL is ${{ secrets.TEST_URL }}"
+      - run: echo "The URL is ${{ secrets.TEST_URL }}"
